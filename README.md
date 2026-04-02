@@ -1,36 +1,34 @@
-# 🌿 Plant AI: Leaf Disease Detection
+# 🌿 Plant AI: Leaf Disease Detection System
 
-An AI-powered system that uses **Computer Vision** (Convolutional Neural Networks) to detect and classify diseases in plant leaves. 
+[![Python](https://img.shields.io/badge/Python-3.13-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-v2.21.0-FF6F00.svg)](https://www.tensorflow.org/)
+[![Streamlit](https://img.shields.io/badge/Live-App-FF4B4B.svg)](https://akkikrsingh2005-plant-health-vision-app-cuhriy.streamlit.app/)
 
-## 🚀 Features
-- **Real-time Image Inference**: Upload a photo and get results instantly.
-- **Disease Categorization**: Detects 20 common diseases across five major crop types.
-- **Actionable Insights**: Provides basic recommendations for plant care based on the detection results.
-- **Modern UI**: Clean and intuitive Streamlit-based web interface.
+A production-ready **Computer Vision** application that leverages **CNN (Convolutional Neural Networks)** to diagnose 20+ common diseases in agricultural crops with high confidence. Optimized for cloud deployment in 2026.
 
-## 🛠️ How to Run
-1. **Clone the repository**:
+## 🚀 Key Features
+- **Deep Learning Inference**: Real-time image classification using a pre-trained **MobileNetV2** backbone.
+- **Agricultural Intelligence**: Detects diseases across **Apple, Corn, Grape, Potato, and Tomato** crops.
+- **Actionable Care Guides**: Generates instant recommendations for plant treatment and isolation.
+- **Cloud-Optimized Architecture**: Specialized `tensorflow-cpu` configuration for 100% stability on Streamlit Community Cloud.
+
+## 🛠️ Technical Implementation
+- **Deep Learning**: TensorFlow 2.21.0 (optimized for Python 3.13).
+- **Computer Vision**: OpenCV-Headless for efficient server-side image processing.
+- **Inference**: MobileNetV2 with ImageNet-based transfer learning for robust feature extraction.
+- **UI**: High-engagement Streamlit interface with confidence scoring and care suggestions.
+
+## 🏃 Quick Start
+1. **Explore the Live App**: [Plant Health Vision Demo](https://akkikrsingh2005-plant-health-vision-app-cuhriy.streamlit.app/)
+2. **Local Setup**:
    ```bash
-   git clone <your-repo-link>
-   cd plant-ai
-   ```
-2. **Install dependencies**:
-   ```bash
+   git clone https://github.com/AkkiKrsingh2005/plant-health-vision.git
+   cd plant-health-vision
    pip install -r requirements.txt
-   ```
-3. **Run the application**:
-   ```bash
    streamlit run app.py
    ```
-
-## 🧠 Technologies Used
-- **TensorFlow / Keras**: For deep learning and image classification.
-- **Streamlit**: For the web application.
-- **PIL (Pillow)**: For image preprocessing and manipulation.
-- **NumPy**: For array computations and data normalization.
-
-## 📚 Dataset Source
-This project is inspired by the **PlantVillage Dataset**, which is a widely used collection of leaf images for plant health research.
+3. **Hardware**: Optimized for CPU-only inference, compatible with all modern systems.
 
 ---
-Built by [Ankit Kumar](https://github.com/raxx21)
+#### Developed as part of an AI/ML Internship Portfolio 🧠
+Developed by **Ankit Kumar** | [Portfolio](https://rajesh-portfolio-two.vercel.app/)
